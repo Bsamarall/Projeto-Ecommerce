@@ -1,3 +1,9 @@
+header{
+  padding: 0.03rem;
+  height: 4rem;
+  background-color: #ff6b6b;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -81,6 +87,11 @@ body {
     margin-top: 30px;
   }
   
+ .map{
+    background-color: #ff8f8b46;
+  }
+
+
   /* Responsividade para dispositivos móveis */
   @media screen and (max-width: 768px) {
     .products {
