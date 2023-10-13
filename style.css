@@ -1,8 +1,10 @@
+/*Arquivo de Login*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
+    background-color: #121214;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,19 +12,20 @@ body {
   }
   
   .container {
-    background-color: #fff;
+    background-color: #212529;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px #f7f4f417;
     overflow: hidden;
   }
   
   .login-box {
     padding: 40px;
     text-align: center;
+    color: #F8F9FA;
   }
   
   h2 {
-    color: #ff6b6b;
+    color: #ff577f;
   }
   
   input {
@@ -35,8 +38,8 @@ body {
   }
   
   button {
-    background-color: #ff6b6b;
-    color: #fff;
+    background-color: #ff577f;
+    color: #F8F9FA;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -45,15 +48,22 @@ body {
   }
   
   button:hover {
-    background-color: #ff8f8b;
+    background-color: #FF427F; /*Animação para transição de cor do botão*/
   }
   
   a {
-    color: #ff6b6b;
+    color: #ff577f;
     text-decoration: none;
   }
   
   a:hover {
     text-decoration: underline;
   }
-  
+
+    /* Responsividade para dispositivos móveis */
+    @media (max-width: 768px) {
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+    }

@@ -7,26 +7,28 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #121214;
    
 
   }
   
   .container {
-    max-width: 500px;
+    max-width: 500px; /*largura do conteiner*/
     margin: 0 auto;
     padding: 15px;
-    background-color: #ffffff;
+    color: white;
+    background-color: #212529;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+    box-shadow: 0 0 20px #f7f4f417;
   }
   
   h1 {
-    color: #ff6b6b;
+    color: #ff577f;
     text-align: center;
     margin-bottom: 20px;
     
   }
+
   
   .form-group {
     margin-bottom: 20px;
@@ -45,7 +47,7 @@
   select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;   /*Alterações nos input da pagina de cadastro.*/
     border-radius: 4px;
     font-size: 16px;
   }
@@ -61,7 +63,7 @@
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #ff6b6b;
+    background-color: #ff577f;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -69,7 +71,7 @@
   }
   
   button:hover {
-    background-color: #ff8f8b;
+    background-color: #FF427F;
   }
 
   
