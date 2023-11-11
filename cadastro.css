@@ -74,6 +74,13 @@
     background-color: #FF427F;
   }
 
+  #back{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ff577f;
+  }
+
   
   /* Responsividade para dispositivos móveis */
   @media (max-width: 768px) {

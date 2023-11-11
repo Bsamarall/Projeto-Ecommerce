@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 
 header {
-    width: 98vw;
+    width: 100vw;
     background-color: #FF427F; /* Cor de fundo */
     color: #f8f9fa; /* Cor do texto */
     padding: 15px; /* Espaçamento interno */
@@ -14,23 +19,6 @@ header {
     max-width: 4vw; /* Tamanho máximo do logotipo */
 }
 
-/* Estilo do menu de navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #f8f9fa;
-    font-weight: bold;
-}
 
 /* Estilo dos links quando hover (passar o mouse por cima) */
 nav a:hover {
@@ -38,6 +26,7 @@ nav a:hover {
 }
 
 body {
+    overflow-x: hidden;  /* remove a barra lateral */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -114,16 +103,53 @@ body {
     background-color: #FF427F;
   }
   
-  
-  .map{
+  #map{
     width: 100vw;
     margin: 0.03vw;
     display: flex;
     background-color: #ff427e9f;
    }
 
+  #footer-end{  /* Todas as DIVS do footer */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
 
-
+   .nav-footer {  /* Padrão das DIVS */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 180px;
+    margin: 42px 0;
+    opacity: 50%;
+    font-size: 14;
+    line-height: 1.6;
+    padding: 2px;
+  }
+  
+  .nav-footer a {  /* Remove a cor azul e o sublinhado do LINK */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para dispositivos móveis (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .nav-footer {
+      width: 100%; /* Defina a largura para 100% para preencher a largura da tela */
+      height: auto; /* Altura automática para acomodar o conteúdo */
+      margin: 20px 0; /* Ajuste a margem como necessário para dispositivos móveis */
+      opacity: 100%; /* Opacidade total */
+      font-size: 14px; /* Ajuste o tamanho da fonte para dispositivos móveis */
+      line-height: 1.4; /* Ajuste o espaçamento entre linhas */
+      padding: 5px; /* Ajuste o preenchimento como necessário */
+    }
+  }
+  
+   
+   li{
+    list-style-type: none;
+   }
 
   /* Responsividade para dispositivos móveis */
   @media screen and (max-width: 768px) {
